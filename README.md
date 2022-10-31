@@ -1,7 +1,7 @@
 # VScode style Portfolio
-A VScode style Portfolio.
+This is VScode style Portfolio.
 
-Developed the portfolio of developer Nitin Ranganath as a React version with his permission.
+Developed the portfolio of developer 'Nitin Ranganath' as a React version with his permission.
 This project is uploaded to GitHub and can be used as an open source.
 But, The design copyright belongs to original creator Nitin Ranganath.
 
