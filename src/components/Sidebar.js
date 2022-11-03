@@ -1,3 +1,4 @@
+/* css import */
 import style from './../styles/Sidebar.module.css';
 
 const Sidebar = () => {

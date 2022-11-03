@@ -1,3 +1,4 @@
+/* css import */
 import style from './../styles/Explorer.module.css';
 
 const Explorer = () => {

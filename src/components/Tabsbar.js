@@ -1,4 +1,6 @@
 import { useNavigate, } from 'react-router-dom'
+
+/* css import */
 import style from './../styles/Tabsbar.module.css'
 
 const Tabsbar = () => {

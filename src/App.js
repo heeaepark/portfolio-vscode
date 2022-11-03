@@ -1,5 +1,7 @@
 import './styles/global.css'; //global style import
 import './styles/theme.css'; // theme style import
+
+/* components import */
 import Layout from './components/Layout';
 
 

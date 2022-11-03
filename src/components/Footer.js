@@ -1,5 +1,7 @@
+/* css import */
 import style from './../styles/Footer.module.css';
 
+/* icon components import */
 import SourceControlIcon from './icons/SourceControlIcon';
 import ErrorIcon from './icons/ErrorIcon';
 import WarningIcon from './icons/WarningIcon';
