@@ -1,6 +1,36 @@
 .sidebar {
   width: 100%;
   /* min-width:  */
-  max-width: 6vw;
+  max-width: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--sidebar-bg);
+  border-right: 1px solid #191d20;
+}
+.icon {
+  width: 48px;
+  height: 48px;
+  padding: 8px;
+}
+.sidebar_top button,
+.sidebar_bottom button {
+  width: 100%;
+  display: block;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
+.sidebar_top button:hover,
+.sidebar_bottom button:hover {
+  background-color: var(--sidebar-hover-bg);
+}
+.sidebar_top button:hover .icon,
+.sidebar_bottom button:hover .icon {
+  fill: rgb(225, 228, 232);
+}
+.sidebar_top button.active,
+.sidebar_bottom button.active {
+  border-left: 2px solid var(--accent-color);
+  background-color: var(--sidebar-hover-bg);
 }

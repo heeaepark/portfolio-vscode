@@ -1,6 +1,6 @@
 .explorer {
   width: 100%;
-  max-width: 20vw;
+  max-width: 172px;
   color: #fff;
   background-color: var(--explorer-bg);
   border-right: 1px solid var(--explorer-border);

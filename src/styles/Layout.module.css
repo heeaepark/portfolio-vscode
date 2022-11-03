@@ -5,7 +5,7 @@
   background-color: var(--main-bg);
 }
 .content {
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .content::-webkit-scrollbar {
   width: 12px;

@@ -17,6 +17,7 @@ import Contact from './../pages/Contact';
 import Projects from './../pages/Projects';
 import Blog from './../pages/Blog';
 import CodeExamples from './../pages/CodeExamples';
+import Setting from './../pages/Setting';
 
 const Layout = () => {
   return (
@@ -34,6 +35,7 @@ const Layout = () => {
             <Route path={process.env.PUBLIC_URL + '/projects'} element={<Projects />}></Route>
             <Route path={process.env.PUBLIC_URL + '/blog'} element={<Blog />}></Route>
             <Route path={process.env.PUBLIC_URL + '/code-examples'} element={<CodeExamples />}></Route>
+            <Route path={process.env.PUBLIC_URL + '/setting'} element={<Setting />}></Route>
           </Routes>
         </div>
       </div>
