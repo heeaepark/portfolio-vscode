@@ -1,11 +1,12 @@
 import './styles/global.css'; //global style import
 import './styles/theme.css'; // theme style import
-import WindowBar from './components/WindowBar';
+import Layout from './components/Layout';
+
 
 function App() {
   return (
     <div className="App">
-      <WindowBar />
+      <Layout />
     </div>
   );
 }

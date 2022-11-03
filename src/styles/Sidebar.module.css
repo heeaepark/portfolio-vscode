@@ -1,0 +1,6 @@
+.sidebar {
+  width: 100%;
+  /* min-width:  */
+  max-width: 6vw;
+  background-color: var(--sidebar-bg);
+}

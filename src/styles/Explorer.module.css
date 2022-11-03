@@ -1,0 +1,13 @@
+.explorer {
+  width: 100%;
+  max-width: 20vw;
+  color: #fff;
+  background-color: var(--explorer-bg);
+  border-right: 1px solid var(--explorer-border);
+}
+
+@media screen and (max-width: 600px) {
+  .explorer {
+    display: none;
+  }
+}

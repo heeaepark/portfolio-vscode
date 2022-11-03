@@ -1,0 +1,6 @@
+.tab {
+  color: #fff;
+}
+.tab.active {
+  color: rgb(170, 170, 218)
+}

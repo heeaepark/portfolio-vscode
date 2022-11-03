@@ -1,5 +1,5 @@
 import VscodeIcon from './icons/VscodeIcon';
-import style from './../styles/WindowBar.module.css';
+import style from './../styles/Windowbar.module.css';
 
 const WindowBar = () => {
   return (
