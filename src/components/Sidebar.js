@@ -49,6 +49,7 @@ const Sidebar = () => {
   const navigate = useNavigate();
   const loacation = useLocation();
   const this_pathName = loacation.pathname;
+  
   return (
     <aside className={style.sidebar}>
       <div className={style.sidebar_top}>
