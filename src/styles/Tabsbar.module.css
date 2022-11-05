@@ -1,6 +1,19 @@
-.tab {
-  color: #fff;
+.tabsbar {
+  width: 100%;
+  display: flex;
+  background: var(--tabs-bg);
+  overflow-x: auto;
 }
-.tab.active {
-  color: rgb(170, 170, 218)
+
+.tabsbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tabsbar::-webkit-scrollbar-track {
+  background: var(--scrollbar-track-bg);
+  border-left: 1px solid #1e1f29;
+}
+.tabsbar::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb-bg);
+  border-left: 1px solid #1e1f29;
 }

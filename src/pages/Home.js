@@ -5,8 +5,7 @@ const Home = () => {
   const thisPath = location.pathname;
   return (
     <>
-      홈입니다용~~~~~!
-      이 홈페이지의 path는!
+      home
     </>
   )
 }

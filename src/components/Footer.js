@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={style.right}>
-        <div className={style.icon_wrap}>
+        <div className={`${style.icon_wrap} ${style.power}`}>
           <ReactIcon className={style.icon} /> Powered by React.js
         </div>
         <div className={style.icon_wrap}>

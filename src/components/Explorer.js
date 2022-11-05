@@ -72,7 +72,7 @@ const Explorer = () => {
               <div 
                 className={style.file} 
                 onClick={() => {
-                  navigate(process.env.PUBLIC_URL + path)
+                  navigate(process.env.PUBLIC_URL + path);
                 }} 
                 key={path}
                 style={ this_pathName === path  ? { backgroundColor: '#24292e' } : {} }

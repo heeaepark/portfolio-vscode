@@ -1,6 +1,7 @@
 footer {
   height: 25px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   padding: 0 8px;
@@ -35,4 +36,10 @@ footer > div {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .power {
+    display: none;
+  }
 }

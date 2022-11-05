@@ -26,17 +26,19 @@ const Layout = () => {
       <div className={style.layout}>
         <Sidebar />
         <Explorer />
-        <div className={style.content} style={{width: '100%'}}>
+        <div className={style.main}>
           <Tabsbar />
-          <Routes>
-            <Route path={process.env.PUBLIC_URL + '/'} element={<Home />}></Route>
-            <Route path={process.env.PUBLIC_URL + '/about'} element={<About />}></Route>
-            <Route path={process.env.PUBLIC_URL + '/contact'} element={<Contact />}></Route>
-            <Route path={process.env.PUBLIC_URL + '/projects'} element={<Projects />}></Route>
-            <Route path={process.env.PUBLIC_URL + '/blog'} element={<Blog />}></Route>
-            <Route path={process.env.PUBLIC_URL + '/code-examples'} element={<CodeExamples />}></Route>
-            <Route path={process.env.PUBLIC_URL + '/setting'} element={<Setting />}></Route>
-          </Routes>
+          <div className={style.content}>
+            <Routes>
+              <Route path={process.env.PUBLIC_URL + '/'} element={<Home />}></Route>
+              <Route path={process.env.PUBLIC_URL + '/about'} element={<About />}></Route>
+              <Route path={process.env.PUBLIC_URL + '/contact'} element={<Contact />}></Route>
+              <Route path={process.env.PUBLIC_URL + '/projects'} element={<Projects />}></Route>
+              <Route path={process.env.PUBLIC_URL + '/blog'} element={<Blog />}></Route>
+              <Route path={process.env.PUBLIC_URL + '/code-examples'} element={<CodeExamples />}></Route>
+              <Route path={process.env.PUBLIC_URL + '/setting'} element={<Setting />}></Route>
+            </Routes>
+          </div>
         </div>
       </div>
       <Footer />

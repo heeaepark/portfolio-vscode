@@ -6,8 +6,7 @@ const About = () => {
   const thisPath = location.pathname;
   return (
     <>
-      자기소개 페이지~!
-      이 홈페이지의 path는! 
+      about
       줄넘김 테스트 <br/>
       줄넘김 테스트 <br/>
       줄넘김 테스트 <br/>
