@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 /* css import */
 import style from './../styles/Layout.module.css';
@@ -20,6 +20,9 @@ import CodeExamples from './../pages/CodeExamples';
 import Setting from './../pages/Setting';
 
 const Layout = () => {
+  const loacation = useLocation();
+  const this_pathName = loacation.pathname;
+
   return (
     <div>
       <Windowbar />
@@ -28,7 +31,7 @@ const Layout = () => {
         <Explorer />
         <div className={style.main}>
           <Tabsbar />
-          <div className={style.content}>
+          <div className={`${style.content} ${this_pathName === '/code-examples' ? style.code_examples : null}`}>
             <Routes>
               <Route path={process.env.PUBLIC_URL + '/'} element={<Home />}></Route>
               <Route path={process.env.PUBLIC_URL + '/about'} element={<About />}></Route>

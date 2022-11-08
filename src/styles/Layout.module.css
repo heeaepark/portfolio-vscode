@@ -13,10 +13,13 @@
 }
 .content {
   overflow-y: auto;
-  height: calc(100vh - 30px - 36px - 25px - 2rem);
+  height: calc(100% - 36px);
   font-family: JetBrains Mono,'Nanum Gothic';
   color: var(--text-color);
   padding: 2rem;
+}
+.code_examples {
+  height: 100%;
 }
 .content::-webkit-scrollbar {
   width: 12px;
