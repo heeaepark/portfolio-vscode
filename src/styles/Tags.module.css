@@ -1,0 +1,22 @@
+.tag {
+  color: var(--text-color);
+  display: inline-block;
+}
+.tagname {
+  color: var(--tagname-text-color);
+  margin-right: 0.25rem;
+}
+.tagname_close {
+  color: var(--tagname-text-color);
+}
+.attr {
+  color: var(--attributename-text-color);
+}
+.attr_value {
+  color: var(--attributevalue-text-color);
+}
+.tag_contents {
+  display: inline-block;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}

@@ -1,71 +1,34 @@
-import { useLocation } from 'react-router-dom';
-import ReactIcon from './../components/icons/ReactIcon';
+import { useState } from 'react';
+
+import CodeBlock from './../components/CodeBlock';
+import CodeLine from './../components/CodeLine';
+import TagContents from '../components/TagContents';
+import { TagOpen, TagClose  } from './../components/Tags'
 
 const About = () => {
-  const location = useLocation();
-  const thisPath = location.pathname;
   return (
     <>
-      about
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
-      줄넘김 테스트 <br/>
+      <CodeBlock>
+        <CodeLine>
+          <TagOpen tagname={'html'} attr={'lang'} attrValue={'"en"'} />
+        </CodeLine>
+          <CodeLine>
+            <TagContents>
+              <TagOpen tagname={'head'}/>
+            </TagContents>
+          </CodeLine>
+            <CodeLine>
+              <TagContents>으아아아 어려워!</TagContents>
+            </CodeLine>
+          <CodeLine>
+            <TagContents>
+              <TagClose tagname={'head'}/>
+            </TagContents>
+          </CodeLine>
+        <CodeLine>
+          <TagClose tagname={'html'} />
+        </CodeLine>
+      </CodeBlock>
     </>
   )
 }

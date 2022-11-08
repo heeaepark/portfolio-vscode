@@ -1,0 +1,86 @@
+.home {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.icon_vscode {
+  fill: var(--explorer-bg);
+  width: 25vw;
+  min-width: 200px;
+}
+
+.typewriter h1 {
+  overflow: hidden; 
+  font-size: 2.5rem;
+  border-right: .15em solid var(--accent-color); 
+  white-space: nowrap;
+  margin: 0 auto; 
+  color: inherit;
+  letter-spacing: .15em; 
+  animation: 
+    typing 1.5s steps(20, end),
+    blink-caret .75s step-end infinite;
+}
+.heading {
+  font-size: 1.5rem;
+  color: inherit;
+  text-align: center;
+  margin: 1em 0;
+}
+.buttons button {
+  font-size: 1.5rem;
+  padding: 0.4em 0.8em;
+  cursor: pointer;
+  color: inherit;
+  transition: 0.2s;
+}
+.buttons button:first-child {
+  margin-right: 0.5em;
+}
+.button_work {
+  background-color: var(--accent-color);
+  border: none;
+  font-weight: bold;
+}
+.button_contact {
+  background-color: transparent;
+  border: 0.1em solid var(--accent-color);
+}
+.buttons button:hover {
+  -webkit-box-shadow: 4px 4px 10px rgb(0 0 0 / 30%);
+  box-shadow: 4px 4px 10px rgb(0 0 0 / 30%);
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--accent-color); }
+}
+
+@media screen and (max-width: 800px) {
+  .typewriter h1 {
+    font-size: 1.5rem;
+  }
+  .heading {
+    font-size: 0.8rem;
+  }
+  .buttons button {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .typewriter h1 {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,6 @@
+.codeline::before {
+  content: counter(line);
+  counter-increment: line;
+  margin-right: 1rem;
+  color: grey;
+}

@@ -24,6 +24,9 @@
   --scrollbar-track-bg: #24292e;
   --scrollbar-thumb-bg: #333536;
   --article-bg: #1f2428;
+  --tagname-text-color: #9DE6A4;
+  --attributename-text-color: #AE93EA;
+  --attributevalue-text-color: #A3C6F4;
 }
 
 /* Dracula */
@@ -50,4 +53,7 @@
   --scrollbar-track-bg: #282a36;
   --scrollbar-thumb-bg: #454647;
   --article-bg: #21222c;
+  --tagname-text-color: #CD72AB;
+  --attributename-text-color: #85F789;
+  --attributevalue-text-color: #F2F999;
 }

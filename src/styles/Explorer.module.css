@@ -16,12 +16,14 @@
   padding: 8px;
   margin-bottom: 16px;
   text-transform: uppercase;
+  color: inherit;
 }
 .heading {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
   text-transform: uppercase;
+  color: #fff;
 }
 .heading .icon {
   transition: 0.3s;
