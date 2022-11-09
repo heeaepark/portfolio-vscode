@@ -2,9 +2,9 @@ import style from './../styles/CodeLine.module.css';
 
 const CodeLine = ({ children }) => {
   return (
-    <p className={style.codeline}>
+    <div className={style.codeline}>
       { children }
-    </p>
+    </div>
   )
 }
 

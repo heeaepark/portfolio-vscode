@@ -11,7 +11,6 @@ const Tab = ({Icon, path, title}) => {
     <div className={`${style.item} ${this_pathName === path && style.active }`} onClick={() => {
       navigate(process.env.PUBLIC_URL + path);
     }}>
-      {console.log(path, this_pathName)}
       <Icon className={style.icon} />
       <p>{title}</p>
     </div>

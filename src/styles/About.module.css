@@ -1,0 +1,50 @@
+.about {
+  /* position: relative; */
+}
+.memoji_container {
+  width: 100%;
+  margin: 0 auto 5em auto;
+  overflow: hidden;
+  /* background-color: #eee; */
+  position: relative;
+}
+.circle {
+  width: 30%;
+  overflow: hidden;
+  padding: 2em 0;
+  margin: 0 auto;
+}
+.circle .memoji {
+  width: 100%;
+  display: block;
+}
+.flow_txt {
+  position: absolute;
+  top: 0;
+  color: var(--accent-color);
+  font-size: 9vw;
+  font-weight: 700;
+  white-space: nowrap;
+  text-transform: uppercase;
+  mix-blend-mode: difference;
+}
+.flow_txt_01 {
+  top: 15%;
+  left: 200%;
+  animation: flow1 12s both linear;
+}
+.flow_txt_02 {
+  left: 100%;
+  top: 50%;
+  animation: flow2 11s both linear;
+  animation-delay: 5s;
+}
+
+@keyframes flow1 {
+  from { left: 140% }
+  to { left: -380% }
+}
+@keyframes flow2 {
+  from { left: 100% }
+  to { left: -300% }
+}

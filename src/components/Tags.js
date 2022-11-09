@@ -11,7 +11,7 @@ const TagOpen = (props) => {
     }
   } 
   return (
-    <div className={style.tag}>
+    <div className={style.tag} style={{paddingLeft: `${props.indent * 0.5}em`}}>
       {'<'} 
       <span className={style.tagname}> { props.tagname } </span>
         {
@@ -27,7 +27,7 @@ const TagOpen = (props) => {
 
 const TagClose = (props) => {
   return (
-    <div className={style.tag}>
+    <div className={style.tag} style={{paddingLeft: `${props.indent * 0.5}em`}}>
       {'</'} 
       <span className={style.tagname_close}> { props.tagname } </span>
       {'>'}

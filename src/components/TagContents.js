@@ -1,11 +1,11 @@
 import style from './../styles/TagContents.module.css'
 
-const TagContens = ({props, children}) => {
+const TagContents = (props) => {
   return (
-    <div className={style.tag_contents} style={{paddingleft: props.indent * '1rem'}}>
-      {children}
+    <div className={style.tag_contents} style={{paddingLeft: `${props.indent * 0.5}em`}}>
+      { props.children }
     </div>
   )
 }
 
-export default TagContens;
+export default TagContents;
