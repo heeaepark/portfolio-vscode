@@ -23,6 +23,7 @@ const Layout = () => {
   const loacation = useLocation();
   const this_pathName = loacation.pathname;
 
+
   return (
     <div>
       <Windowbar />

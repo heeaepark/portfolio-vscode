@@ -1,50 +1,55 @@
-.about {
-  /* position: relative; */
-}
-.memoji_container {
-  width: 100%;
-  margin: 0 auto 5em auto;
-  overflow: hidden;
-  /* background-color: #eee; */
-  position: relative;
-}
+
 .circle {
-  width: 30%;
-  overflow: hidden;
-  padding: 2em 0;
-  margin: 0 auto;
+  width: 28vw;
+  height: 28vw;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: scale(0);
+  animation: scale 1s both linear;
+  margin: 4em auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.circle .memoji {
+.memoji {
   width: 100%;
-  display: block;
-}
-.flow_txt {
+  opacity: 0;
+  animation: opacity 1s both linear;
+  animation-delay: 1s;
   position: absolute;
-  top: 0;
-  color: var(--accent-color);
-  font-size: 9vw;
-  font-weight: 700;
-  white-space: nowrap;
-  text-transform: uppercase;
-  mix-blend-mode: difference;
-}
-.flow_txt_01 {
-  top: 15%;
-  left: 200%;
-  animation: flow1 12s both linear;
-}
-.flow_txt_02 {
-  left: 100%;
   top: 50%;
-  animation: flow2 11s both linear;
-  animation-delay: 5s;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle_text_box {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-origin: center center;
+  opacity: 0;
+  animation: 
+    rotate 40s infinite linear,
+    opacity 1s both linear;
+  animation-delay: 2s;
+}
+.circle_svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  fill: var(--accent-color);
 }
 
-@keyframes flow1 {
-  from { left: 140% }
-  to { left: -380% }
+@keyframes scale {
+  from { transform: scale(0); }
+  to { transform: scale(1); }
 }
-@keyframes flow2 {
-  from { left: 100% }
-  to { left: -300% }
+@keyframes opacity {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }

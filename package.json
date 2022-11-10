@@ -12,6 +12,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
+    "react-scroll-motion": "^0.3.0",
     "styled-reset": "^4.4.2",
     "web-vitals": "^2.1.4"
   },

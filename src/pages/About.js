@@ -1,31 +1,24 @@
 import { useEffect, useRef, useState } from 'react';
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 
 import CodeBlock from './../components/CodeBlock';
 import CodeLine from './../components/CodeLine';
 import TagContents from '../components/TagContents';
 import { TagOpen, TagClose  } from './../components/Tags';
 
+import CircleSvg from '../components/CircleSvg';
 import style from './../styles/About.module.css';
 
 const About = () => {
-  gsap.registerPlugin(ScrollTrigger);
-  const circlRef = useRef();
-  useEffect(() => {
-    console.log(circlRef.current);
-  }, [])
   return (
-    <div className={style.about}>
-      <div>
-        <div className={style.memoji_container}>
-          <div className={style.circle} ref={circlRef}>
-            <img className={style.memoji} src={`${process.env.PUBLIC_URL}/images/memogi.png`} alt="memoji" />
-          </div>
-          <p className={`${style.flow_txt} ${style.flow_txt_01}`}>hello there! nice to meet you.</p>
-          <p className={`${style.flow_txt} ${style.flow_txt_02}`}>scroll down, please!</p>
+    <>
+      <div className={style.circle}>
+        <img className={style.memoji} src={`${process.env.PUBLIC_URL}/images/memogi.png`} alt="memoji" />
+        <div className={style.circle_text_box}>
+          <CircleSvg className={style.circle_svg} width={'155%'} height={'155%'}/>
         </div>
       </div>
+
       <CodeBlock>
 
         <CodeLine>
@@ -239,7 +232,7 @@ const About = () => {
         </CodeLine>
 
       </CodeBlock>
-    </div>
+    </>
   )
 }
 
