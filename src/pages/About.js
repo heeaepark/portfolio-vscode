@@ -1,5 +1,3 @@
-import { useEffect, useRef, useState } from 'react';
-import { Animator, ScrollContainer, ScrollPage, batch, Fade, FadeIn, FadeOut, Move, MoveIn, MoveOut, Sticky, StickyIn, StickyOut, Zoom, ZoomIn, ZoomOut } from "react-scroll-motion";
 
 import CodeBlock from './../components/CodeBlock';
 import CodeLine from './../components/CodeLine';
