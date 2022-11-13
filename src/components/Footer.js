@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer>
       <div className={style.left}>
-        <a className={style.icon_wrap} href="https://github.com/heeaepark" target="_blank">
+        <a className={style.icon_wrap} href="https://github.com/heeaepark" target="_blank" rel="noopener noreferrer">
           <SourceControlIcon className={style.icon} fill={'#fff'} />
           main
         </a>
