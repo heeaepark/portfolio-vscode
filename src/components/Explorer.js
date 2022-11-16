@@ -49,7 +49,7 @@ const Explorer = () => {
   const navigate = useNavigate();
   const loacation = useLocation();
   const this_pathName = loacation.pathname;
-  const [toggle_menu, setToggle_menu] = useState(false);
+  const [toggle_menu, setToggle_menu] = useState(true);
   
   return (
     <section className={style.explorer}>

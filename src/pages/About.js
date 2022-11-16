@@ -85,7 +85,7 @@ const About = () => {
             제가 하는 일을 좋아하고, 스스로 부족한 부분을 잘 알기에 개발 공부하는 것이 즐겁습니다.<br/>
             저는 공부한 것을 팀원들과 나누고 서로 배우는 것에 큰 가치가 있다고 여깁니다.<br/>
             완벽하지 않아서 더 나은 서비스를 만드는 것을 함께 고민하고,<br/>
-            각자의 부족함을 서로 채우고, 재능을 인정하는 것이 좋은 기업과 서비스를 만드는 열쇠라고 생각합니다.
+            각자의 부족함을 서로 채우고, 재능을 인정하는 것이 좋은 기업과 서비스를 만드는 열쇠라고 생각하며 일합니다.
           </TagContents>
         </CodeLine>
 
@@ -93,7 +93,7 @@ const About = () => {
           <TagClose tagname={'heaeder'} indent={3}/>
         </CodeLine>
 
-        <CodeLine></CodeLine>
+        <CodeLine />
 
         <CodeLine>
           <TagOpen tagname={'main'} attr={'class'} attrValue={'"기술과 경험, 그리고 공부중인 것들"'} indent={3} />
@@ -104,7 +104,7 @@ const About = () => {
             <h4>💻 사용 기술과 경험</h4>
           </TagContents>
         </CodeLine>
-        <CodeLine></CodeLine>
+        <CodeLine />
         <CodeLine>
           <TagContents indent={6}>
             <dl>
@@ -117,7 +117,7 @@ const About = () => {
             </dl>
           </TagContents>
         </CodeLine>
-        <CodeLine></CodeLine>
+        <CodeLine />
         <CodeLine>
           <TagContents indent={6}>
             <dl>
@@ -128,7 +128,7 @@ const About = () => {
             </dl>
           </TagContents>
         </CodeLine>
-        <CodeLine></CodeLine>
+        <CodeLine />
         <CodeLine>
           <TagContents indent={6}>
             <dl>
@@ -141,7 +141,7 @@ const About = () => {
             </dl>
           </TagContents>
         </CodeLine>
-        <CodeLine></CodeLine>
+        <CodeLine />
         <CodeLine>
           <TagContents indent={6}>
             <dl>
@@ -154,18 +154,18 @@ const About = () => {
               <dd>- 로컬스토리지에 저장한 데이터를 불러와 컴포넌트에 바인딩한 경험이 있습니다.</dd>
               <dd>- React Bootstrap / Styled-components / SCSS / css-module을 모두 사용할 수 있습니다.</dd>
               <dd>- Redux toolkit을 사용한 경험이 있습니다.</dd>
-              <dd>- useEffect를 활용하여 App과 컴포넌트의 Lifecycle을 관리한 경험이 있습니다.</dd>
+              <dd>- axios를 이용하여 API 데이터를 받아와, 컴포넌트에 데이터를 바인딩한 경험이 있습니다.</dd>
             </dl>
           </TagContents>
         </CodeLine>
-        <CodeLine></CodeLine>
-        <CodeLine></CodeLine>
+        <CodeLine/>
+        <CodeLine />
         <CodeLine>
           <TagContents indent={5}>
             <h4>✍️ 공부중인 것</h4>
           </TagContents>
         </CodeLine>
-        <CodeLine></CodeLine>
+        <CodeLine />
 
         <CodeLine>
           <TagContents indent={6}>
@@ -175,7 +175,7 @@ const About = () => {
             </dl>
           </TagContents>
         </CodeLine>
-        <CodeLine></CodeLine>
+        <CodeLine />
 
         <CodeLine>
           <TagContents indent={6}>
@@ -185,7 +185,7 @@ const About = () => {
             </dl>
           </TagContents>
         </CodeLine>
-        <CodeLine></CodeLine>
+        <CodeLine />
 
         <CodeLine>
           <TagContents indent={6}>
@@ -195,7 +195,7 @@ const About = () => {
             </dl>
           </TagContents>
         </CodeLine>
-        <CodeLine></CodeLine>
+        <CodeLine />
 
         <CodeLine>
           <TagContents indent={6}>
@@ -211,13 +211,55 @@ const About = () => {
         <CodeLine>
           <TagClose tagname={'main'} indent={3}/>
         </CodeLine>
-        <CodeLine></CodeLine>
+        <CodeLine />
 
         <CodeLine>
-          <TagOpen tagname={'article'} attr={'class'} attrValue={'"교육 및 경력"'} indent={3} />
+          <TagOpen tagname={'footer'} attr={'class'} attrValue={'"경력 및 교육"'} indent={3} />
         </CodeLine>
+
         <CodeLine>
-          <TagClose tagname={'article'} indent={3}/>
+          <TagContents indent={5}>
+            <h4>📇 경력</h4>
+          </TagContents>
+        </CodeLine>
+        <CodeLine />
+        <CodeLine>
+          <TagContents indent={6}>
+          <dl>
+            <dt><em>{'('}주{')'}메이커빌{'('}2020.06 ~ 2022.06{')'}</em></dt>
+            <dd>- 쇼핑몰 개발 및 백오피스 개발, 유지보수 업무 담당 (정직원/사원)</dd>
+          </dl>
+          </TagContents>
+        </CodeLine>
+        <CodeLine />
+        <CodeLine>
+          <TagContents indent={6}>
+          <dl>
+            <dt><em>{'('}주{')'}누리미디어{'('}2019.03 ~ 2019.05{')'}</em></dt>
+            <dd>- 학회 홈페이지 유지보수 및 관리 (아르바이트)</dd>
+          </dl>
+          </TagContents>
+        </CodeLine>
+
+        <CodeLine />
+        <CodeLine />
+        <CodeLine>
+          <TagContents indent={5}>
+            <h4>👩‍🎓 교육</h4>
+          </TagContents>
+        </CodeLine>
+        <CodeLine />
+        <CodeLine>
+          <TagContents indent={6}>
+          <dl>
+            <dt>- 한국방송통신대학교 컴퓨터과학과 3학년{'('}2022.03 입학 ~ 휴학중{')'}</dt>
+            <dt>- 이젠아카데미 모바일 웹디자인 & 프론트엔드{'('}UIUX디자인{')'} 웹퍼블리셔 과정 수료{'('}2020.08 ~ 2020.01{')'}</dt>
+          </dl>
+          </TagContents>
+        </CodeLine>
+
+        <CodeLine>
+          <TagClose tagname={'footer'} indent={3}/>
         </CodeLine>
         
 

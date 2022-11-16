@@ -1,7 +1,8 @@
-import axios from 'axios'
+import axios from 'axios';
 
 const Projects = () => {
-  axios.get('https://heeaepark.github.io/myapi/portfolio-api/project.json').then((결과)=>{
+  axios.get('https://heeaepark.github.io/myapi/portfolio-api/project.json')
+  .then((결과)=>{
     console.log(결과.data)
   })
   .catch(()=>{

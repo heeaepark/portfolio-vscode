@@ -1,0 +1,14 @@
+.contact_tit {
+  margin-bottom: 0.8em;
+}
+.contact_item {
+  margin-bottom: 1em;
+}
+.socials {
+  color: var(--accent-color);
+  margin-right: 0.5em;
+}
+.social_item {
+  display: inline-block;
+  margin: 0 0.3em 0 0.5em;
+}
