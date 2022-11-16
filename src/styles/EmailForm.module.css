@@ -1,0 +1,80 @@
+input, textarea, button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  outline: none;
+}
+.emailform_title {
+  /* border-top: 1px solid var(--accent-color); */
+  margin-top: 2em;
+  padding: 1em 0 0.5em 0;
+}
+.emailform_subtitle {
+  font-size: 0.8rem;
+  color: rgb(163, 163, 163);
+  margin-bottom: 3em;
+}
+.emailform_wrap {
+  display: flex;
+}
+.emailform_item {
+  width: calc((100% - 3em) / 2 );
+  margin-right: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.emailform_item:last-child {
+  margin-right: 0;
+}
+.form_wrap {
+  margin-bottom: 2em;
+}
+.form_wrap_msg {
+  margin-bottom: 1em;
+}
+.form_wrap label {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+.form_wrap input, .form_wrap textarea {
+  width: 100%;
+  padding: 0.5em;
+  background-color: transparent;
+  color: var(--text-color);
+}
+.form_wrap input {
+  height: 3em;
+  border: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+.form_wrap textarea {
+  width: 100%;
+  resize: none;
+  height: 20em;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.form_wrap input:focus, .form_wrap textarea:focus{
+  border-color: rgba(255, 255, 255, 1);
+}
+.emailform_item input[type=submit] {
+  height: 3em;
+  cursor: pointer;
+  border: 0;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--accent-color);
+}
+
+@media screen and (max-width: 1080px) {
+  .emailform_wrap {
+    flex-direction: column;
+  }
+  .emailform_item {
+    width: 100%;
+    margin-right: 0em;
+  }
+}
