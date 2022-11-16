@@ -34,7 +34,7 @@ const EmailForm = () => {
     <>
       <form ref={form} autoComplete="off" onSubmit={sendEmail}>
         <h2 className={style.emailform_title}>Send Email 📨</h2>
-        <p className={style.emailform_subtitle}><em>메일을 보내주시면, 평일 기준 3일 이내에 답장드릴게요!</em></p>
+        <p className={style.emailform_subtitle}><em>메일을 보내주시면, 평일 기준 3일 이내에 답장 드릴게요!</em></p>
         <div className={style.emailform_wrap}>
           <div className={`${style.emailform_item}`}>
             <div className={style.form_wrap}>
