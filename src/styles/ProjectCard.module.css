@@ -1,0 +1,98 @@
+.card {
+  width: 100%;
+  background-color: var(--explorer-bg);
+  overflow: hidden;
+  border-radius: 0.5em;
+}
+.card:hover {
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+.img_wrap {
+  position: relative;
+  overflow: hidden;
+}
+.copy_tag {
+  position: absolute;
+  width: 150%;
+  left: 13%;
+  top: 19%;
+  padding: 0.3em 0;
+  text-align: center;
+  white-space: nowrap;
+  background-color: var(--accent-color);
+  transform: translate(-50%,-50%) rotate(-43deg);
+}
+.card_img {
+  width: 100%;
+  object-fit: contain;
+}
+.card_content {
+  padding: 1em;
+}
+.card_title {
+  margin-bottom: 0.5em;
+}
+.card_desc {
+  min-height: 2.8em;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+}
+.skill_tag {
+  display: inline-block;
+  margin: 0.5em 0.5em 0 0;
+}
+.memo {
+  display: block;
+  margin-top: 1em;
+  padding: 0.3em;
+  text-align: center;
+  border: 2px solid #ff4154;
+  border-radius: 1em;
+  transition: 0.5s;
+}
+.memo:hover {
+  background-color: #ff4154;
+}
+.career {
+  display: block;
+  margin-top: 1em;
+  padding: 0.3em;
+  text-align: center;
+  border: 2px solid #416dff;
+  border-radius: 1em;
+  transition: 0.5s;
+}
+.career:hover {
+  background-color: #416dff;
+}
+.link_wrap {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link_wrap a {
+  margin-top: 1em;
+  padding: 0.3em;
+  text-align: center;
+  border-radius: 1em;
+  transition: 0.5s;
+  width: calc((100% - 1em) / 2);
+}
+.source_code {
+  border: 2px solid #00ad00;
+}
+.source_code:hover {
+  background-color: #00ad00;
+}
+.demo {
+  border: 2px solid #f38f1e;
+}
+.demo:hover {
+  background-color: #f38f1e;
+}
+@media screen and (max-width: 720px) {
+  .card {
+    font-size: 0.85rem;
+  }
+}
