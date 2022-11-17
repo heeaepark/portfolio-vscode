@@ -5,7 +5,7 @@ import style from './../styles/EmailForm.module.css'
 import { useState } from 'react';
 
 const EmailForm = () => {
-  const [sendMsg,setSendMsg] = useState('Send');
+  const [sendMsg, setSendMsg] = useState('Send');
   const form = useRef();
   const email_public_key = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
   const email_service_id = process.env.REACT_APP_EMAILJS_SERVICE_ID;
