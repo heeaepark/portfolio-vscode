@@ -1,6 +1,6 @@
 .card {
   width: 100%;
-  background-color: var(--explorer-bg);
+  background-color: var(--article-bg);
   overflow: hidden;
   border-radius: 0.5em;
 }

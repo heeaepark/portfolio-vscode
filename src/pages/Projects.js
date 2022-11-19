@@ -7,9 +7,10 @@ import style from './../styles/Projects.module.css'
 
 const Projects = () => {
   const [project, setProject] = useState(null);
+  
   const getData = async () => {
     try {
-      const result = await axios.get('https://heeaepark.github.io/myapi/portfolio-api/project.json')
+      const result = await axios.get('https://heeaepark.github.io/myapi/portfolio-api/project.json');
       console.log('Get data!');
       setProject(result.data);
     } catch (error) {
