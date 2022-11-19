@@ -1,0 +1,39 @@
+.setting_title{
+  margin-bottom: 0.8em;
+}
+.theme_items {
+  display: grid;
+  height: 100%;
+  margin: 0 2em;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+}
+.theme_item {
+  text-align: center;
+}
+.img_wrap {
+  width: 40%;
+  margin: 0 auto;
+}
+.img_wrap img {
+  width: 100%;
+}
+.theme_items h3,
+.theme_items h4 {
+  margin: 0.4em;
+}
+.theme_items button {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.2em 0.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  color: var(--button-text);
+  background-color: var(--button-bg);
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.theme_items button:focus {
+  border: 1px solid var(--accent-color);
+}

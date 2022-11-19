@@ -57,7 +57,7 @@ const About = () => {
           <TagContents indent={4}>
             안녕하세요! 👋 <br/> 
             저는 인터랙티브 웹 기술과 프론트엔드 개발에 관심이 많은 <br/> 
-            2년차 웹퍼블리셔 박희애 입니다.
+            3년차 웹퍼블리셔 박희애 입니다.
           </TagContents>
         </CodeLine>
         <CodeLine>
