@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(10em, 1fr));
+  gap: 1.5em;
 }
 .theme_item {
   text-align: center;
@@ -23,7 +24,7 @@
 .theme_items h4 {
   margin: 0.4em;
 }
-.theme_items button {
+.theme_items label {
   display: inline-block;
   margin-top: 1em;
   padding: 0.2em 0.5em;
@@ -31,9 +32,9 @@
   font-weight: 700;
   color: var(--button-text);
   background-color: var(--button-bg);
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   cursor: pointer;
 }
-.theme_items button:focus {
-  border: 1px solid var(--accent-color);
+.theme_items input[type="radio"]:checked + label {
+  border: 2px solid var(--accent-color);
 }
