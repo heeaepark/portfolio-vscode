@@ -219,7 +219,7 @@ const About = () => {
 
         <CodeLine>
           <TagContents indent={5}>
-            <h4>📇 경력</h4>
+            <h4>📇 경력 {'('}<a href="https://vivacious-airboat-62d.notion.site/f2f8c1a4fd104dda97c0fd4dba619d7a" target="_blank" rel="noopener noreferrer">노션 보러가기</a>{')'}</h4>
           </TagContents>
         </CodeLine>
         <CodeLine />
