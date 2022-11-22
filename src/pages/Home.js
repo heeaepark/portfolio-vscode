@@ -18,10 +18,10 @@ const Home = () => {
         </p>
         <div className={style.buttons}>
           <button onClick={() => {
-            navigate(process.env.PUBLIC_URL + '/projects');
+            navigate('/projects');
           }} className={`${style.button} ${style.button_work}`}>View Works</button>
           <button onClick={() => {
-            navigate(process.env.PUBLIC_URL + '/contact');
+            navigate('/contact');
           }} className={`${style.button} ${style.button_contact}`}>Contact me</button>
         </div>
       </div>

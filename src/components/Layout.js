@@ -34,13 +34,13 @@ const Layout = () => {
           <Tabsbar />
           <div className={`${style.content} ${this_pathName === '/code-examples' ? style.code_examples : null}`}>
             <Routes>
-              <Route path={process.env.PUBLIC_URL + '/'} element={<Home />}></Route>
-              <Route path={process.env.PUBLIC_URL + '/about'} element={<About />}></Route>
-              <Route path={process.env.PUBLIC_URL + '/contact'} element={<Contact />}></Route>
-              <Route path={process.env.PUBLIC_URL + '/projects'} element={<Projects />}></Route>
-              <Route path={process.env.PUBLIC_URL + '/blog'} element={<Blog />}></Route>
-              <Route path={process.env.PUBLIC_URL + '/code-examples'} element={<CodeExamples />}></Route>
-              <Route path={process.env.PUBLIC_URL + '/setting'} element={<Setting />}></Route>
+              <Route path='/' element={<Home />}></Route>
+              <Route path='/about' element={<About />}></Route>
+              <Route path='/contact' element={<Contact />}></Route>
+              <Route path='/projects' element={<Projects />}></Route>
+              <Route path='/blog' element={<Blog />}></Route>
+              <Route path='/code-examples' element={<CodeExamples />}></Route>
+              <Route path='/setting' element={<Setting />}></Route>
             </Routes>
           </div>
         </div>

@@ -57,7 +57,7 @@ const Sidebar = () => {
           sidebarTopItems.map(({Icon, path}) => {
             return (
               <button onClick={() => {
-                navigate(process.env.PUBLIC_URL + path)
+                navigate(path)
               }} key={path}>
                 <Icon className={style.icon} fill={ this_pathName === path ? 'rgb(225, 228, 232)' : 'rgb(106, 115, 125)' } />
               </button>
@@ -70,7 +70,7 @@ const Sidebar = () => {
         sidebarBottomItems.map(({Icon, path}) => {
           return (
             <button onClick={() => {
-              navigate(process.env.PUBLIC_URL + path)
+              navigate(path)
             }} key={path}>
               <Icon className={style.icon} fill={ this_pathName === path ? 'rgb(225, 228, 232)' : 'rgb(106, 115, 125)' } />
             </button>
