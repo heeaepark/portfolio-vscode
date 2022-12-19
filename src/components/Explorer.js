@@ -75,7 +75,7 @@ const Explorer = () => {
                   navigate(path);
                 }} 
                 key={path}
-                style={ this_pathName === path  ? { backgroundColor: '#24292e' } : {} }
+                style={ this_pathName === path  ? { backgroundColor: 'var(--explorer-hover-bg)' } : {} }
               >
                 <Icon className={style.icon} /> 
                 <span>{title}</span>
