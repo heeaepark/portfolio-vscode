@@ -32,7 +32,7 @@ const About = () => {
         </CodeLine>
 
         <CodeLine>
-          <TagContents indent={4} > 안녕하세요, 저는 인터랙티브 웹 공부를 좋아하는 박희애입니다. 👩‍💻</TagContents>
+          <TagContents indent={4} > 안녕하세요, 저는 인터랙티브 웹 공부를 좋아하는 박희애입니다. 👩‍💻 <strong>{'('}<a href="https://heeaepark.notion.site/D-0d433d2f89e345de9f970fb240d92ad5" target="_blank" rel="noopener noreferrer">노션 보러가기</a>{')'}</strong></TagContents>
         </CodeLine>
 
         <CodeLine>
@@ -201,7 +201,6 @@ const About = () => {
           <TagContents indent={6}>
             <dl>
               <dt><em>JS</em></dt>
-              <dd>- 인터랙티브 웹 개발을 위해 DOM, Event에 대해 공부하고 있습니다.</dd>
               <dd>- 다양한 메서드에 대해서 공부하고 정리하고 있습니다.</dd>
               <dd>- 클래스, 콜백, 프로미스, 클로저를 이해하기 위해 공부하고 있습니다.</dd>
             </dl>
@@ -219,7 +218,7 @@ const About = () => {
 
         <CodeLine>
           <TagContents indent={5}>
-            <h4>📇 경력 {'('}<a href="https://vivacious-airboat-62d.notion.site/f2f8c1a4fd104dda97c0fd4dba619d7a" target="_blank" rel="noopener noreferrer">노션 보러가기</a>{')'}</h4>
+            <h4>📇 경력 {'('}<a href="https://heeaepark.notion.site/f2f8c1a4fd104dda97c0fd4dba619d7a" target="_blank" rel="noopener noreferrer">노션 보러가기</a>{')'}</h4>
           </TagContents>
         </CodeLine>
         <CodeLine />

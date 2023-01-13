@@ -27,6 +27,11 @@ const Contact = () => {
       href: 'https://heeeming.tistory.com/',
     },
     {
+      social: 'notion',
+      link: 'heeaepark notion',
+      href: 'https://heeaepark.notion.site/D-0d433d2f89e345de9f970fb240d92ad5',
+    },
+    {
       social: 'kakao',
       link: 'kakao open chat',
       href: 'https://open.kakao.com/o/szrbw7Ne'
