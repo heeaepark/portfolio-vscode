@@ -16,6 +16,11 @@ const Blog = () => {
       const result = await axios.get(`https://api.rss2json.com/v1/api.json?rss_url=${encoded}&api_key=${apiKey}`);
       console.log('Get data!');
       setPost(result.data.items);
+      result.data.items.map((item) => {
+        const desc = item.description;
+        const url = desc.slice(desc.indexOf('data-url="') + 10, desc.indexOf('" data-lightbox='));
+        bgUrl.push(`${url}`);
+      })
     } catch (error) {
       console.log('Data load failed:'+ error);
     }
@@ -23,16 +28,16 @@ const Blog = () => {
   useEffect(() => {
     getData();
   }, []);
-  useEffect(() => {
+  /* useEffect(() => {
     getBgUrt();
-  }, [post])
-  const getBgUrt = () => {
+  }, [post]) */
+  /* const getBgUrt = () => {
     post && post.map((item) => {
       const desc = item.description;
       const url = desc.slice(desc.indexOf('data-url="') + 10, desc.indexOf('" data-lightbox='));
       bgUrl.push(`${url}`);
     })
-  }
+  } */
   return (
     <>
       <h2 className={style.blog_title}>Recent Posts from blog ✍️</h2>
