@@ -7,6 +7,7 @@ import style from './../styles/Blog.module.css'
 
 const Blog = () => {
   const [post, setPost] = useState(null);
+  const [bgUrl] = useState([]);
   const encoded = encodeURIComponent("https://heeeming.tistory.com/rss");
   const apiKey = process.env.REACT_APP_RSSTOJSON_API_KEY;
 
@@ -22,7 +23,16 @@ const Blog = () => {
   useEffect(() => {
     getData();
   }, []);
-
+  useEffect(() => {
+    getBgUrt();
+  }, [post])
+  const getBgUrt = () => {
+    post && post.map((item) => {
+      const desc = item.description;
+      const url = desc.slice(desc.indexOf('data-url="') + 10, desc.indexOf('" data-lightbox='));
+      bgUrl.push(`${url}`);
+    })
+  }
   return (
     <>
       <h2 className={style.blog_title}>Recent Posts from blog ✍️</h2>
@@ -34,7 +44,7 @@ const Blog = () => {
                 <a href={item.link} target="_blank" rel="noopener noreferrer">
                   <Note>
                     <div className={style.post_content}>
-                      <div className={style.img_wrap} style={{backgroundImage: `url(${item.thumbnail})`}} />
+                      <div className={style.img_wrap} style={{backgroundImage: `url(${bgUrl[idx]})`}} />
                       <h3 className={style.post_title}>{item.title}</h3>
                       <p className={style.pubdate}>{item.pubDate}</p>
                     </div>
