@@ -1,102 +1,142 @@
+import CodeBlock from "./../components/CodeBlock";
+import CodeLine from "./../components/CodeLine";
+import TagContents from "../components/TagContents";
+import { TagOpen, TagClose } from "./../components/Tags";
 
-import CodeBlock from './../components/CodeBlock';
-import CodeLine from './../components/CodeLine';
-import TagContents from '../components/TagContents';
-import { TagOpen, TagClose  } from './../components/Tags';
-
-import CircleSvg from '../components/CircleSvg';
-import style from './../styles/About.module.css';
+import CircleSvg from "../components/CircleSvg";
+import style from "./../styles/About.module.css";
 
 const About = () => {
   return (
     <>
       <div className={style.circle}>
-        <img className={style.memoji} src={`${process.env.PUBLIC_URL}/images/memogi.png`} alt="memoji" />
+        <img
+          className={style.memoji}
+          src={`${process.env.PUBLIC_URL}/images/memogi.png`}
+          alt="memoji"
+        />
         <div className={style.circle_text_box}>
-          <CircleSvg className={style.circle_svg} width={'155%'} height={'155%'}/>
+          <CircleSvg
+            className={style.circle_svg}
+            width={"155%"}
+            height={"155%"}
+          />
         </div>
       </div>
 
       <CodeBlock>
-
         <CodeLine>
-          <TagOpen tagname={'html'} attr={'lang'} attrValue={'"ko"'} />
+          <TagOpen tagname={"html"} attr={"lang"} attrValue={'"ko"'} />
         </CodeLine>
 
         <CodeLine>
-          <TagOpen tagname={'head'} indent={2}/>
+          <TagOpen tagname={"head"} indent={2} />
         </CodeLine>
 
         <CodeLine>
-          <TagOpen tagname={'title'} indent={3}/>
-        </CodeLine>
-
-        <CodeLine>
-          <TagContents indent={4} > 안녕하세요, 저는 인터랙티브 웹 공부를 좋아하는 박희애입니다. 👩‍💻 <strong>{'('}<a href="https://heeaepark.notion.site/D-0d433d2f89e345de9f970fb240d92ad5" target="_blank" rel="noopener noreferrer">노션 보러가기</a>{')'}</strong></TagContents>
-        </CodeLine>
-
-        <CodeLine>
-          <TagClose tagname={'title'} indent={3}/>
-        </CodeLine>
-
-        <CodeLine>
-          <TagClose tagname={'head'} indent={2}/>
-        </CodeLine>
-
-
-
-        <CodeLine>
-          <TagOpen tagname={'body'} indent={2}/>
-        </CodeLine>
-
-        <CodeLine>
-          <TagOpen tagname={'heaeder'} attr={'class'} attrValue={'"자기소개"'} indent={3} />
+          <TagOpen tagname={"title"} indent={3} />
         </CodeLine>
 
         <CodeLine>
           <TagContents indent={4}>
-            안녕하세요! 👋 <br/> 
-            저는 인터랙티브 웹 기술과 프론트엔드 개발에 관심이 많은 <br/> 
-            3년차 웹퍼블리셔 박희애 입니다.
-          </TagContents>
-        </CodeLine>
-        <CodeLine>
-          <TagContents indent={4}>
-            <br/>
-            웹 표준성을 지키려 노력하고, 컴포넌트의 재사용성을 고려하여 개발합니다. <br/>
-            그리고 사용자의 관점에서 '잘 만든' 웹을 만드는 것에 대해 언제나 고민합니다.<br/>
-            새로운 웹 기술과 지식에 대해 관심이 많고 꾸준히 공부하고 있습니다. 📝<br/>
-          </TagContents>
-        </CodeLine>
-        <CodeLine>
-          <TagContents indent={4}>
-            <br/>
-            새롭게 배운 기술을 업무에 적용하여 좀 더 나은 서비스를 구축하는 것에 가장 큰 보람을 느낍니다.<br/>
-            디자이너, 기획자와 함께 의견을 나누고 고민을 하며 프로젝트의 시작과 끝을 맺은 경험이 있습니다. <br/>
-            가장 좋아하는 것은 SCSS를 통해 CSS를 작은 컴포넌트 단위로 개발하여 확장성을 높이는 것이고,<br/>
-            개발자의 관점에서 개발하기 쉽게 꼼꼼하게 주석 달기가 취미{'(?)'}입니다.<br/>
-            실제로 같이 일했던 팀원분이 제가 만든 마크업 페이지는 개발하기 쉽다고 말씀해주셔서<br/>
-            뿌듯했던 기억이 있습니다. ✨
-          </TagContents>
-        </CodeLine>
-        <CodeLine>
-          <TagContents indent={4}>
-            <br/>
-            제가 하는 일을 좋아하고, 스스로 부족한 부분을 잘 알기에 개발 공부하는 것이 즐겁습니다.<br/>
-            저는 공부한 것을 팀원들과 나누고 서로 배우는 것에 큰 가치가 있다고 여깁니다.<br/>
-            완벽하지 않아서 더 나은 서비스를 만드는 것을 함께 고민하고,<br/>
-            각자의 부족함을 서로 채우고, 재능을 인정하는 것이 좋은 기업과 서비스를 만드는 열쇠라고 생각하며 일합니다.
+            {" "}
+            안녕하세요, 프론트엔드 개발자 박희애입니다! 👩‍💻
+            <strong>
+              {"("}
+              <a
+                href="https://heeaepark.notion.site/f2f8c1a4fd104dda97c0fd4dba619d7a?pvs=4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                노션 보러가기
+              </a>
+              {")"}
+            </strong>
           </TagContents>
         </CodeLine>
 
         <CodeLine>
-          <TagClose tagname={'heaeder'} indent={3}/>
+          <TagClose tagname={"title"} indent={3} />
+        </CodeLine>
+
+        <CodeLine>
+          <TagClose tagname={"head"} indent={2} />
+        </CodeLine>
+
+        <CodeLine>
+          <TagOpen tagname={"body"} indent={2} />
+        </CodeLine>
+
+        <CodeLine>
+          <TagOpen
+            tagname={"heaeder"}
+            attr={"class"}
+            attrValue={'"자기소개"'}
+            indent={3}
+          />
+        </CodeLine>
+
+        <CodeLine>
+          <TagContents indent={4}>
+            안녕하세요! 👋 <br />
+            저는 아토믹한 단위의 프론트 개발을 좋아하는 박희애입니다!
+          </TagContents>
+        </CodeLine>
+        <CodeLine>
+          <TagContents indent={4}>
+            <br />
+            아토믹한 디자인 패턴으로 개발하는 것을 좋아하여 작은 단위의
+            컴포넌트를 재사용성과 확장성을 고려하며 개발합니다.
+            <br />
+          </TagContents>
+        </CodeLine>
+        <CodeLine>
+          <TagContents indent={4}>
+            <br />
+            새롭게 배운 기술을 업무에 적용하여 좀 더 나은 서비스를 구축하는 것에
+            가장 큰 보람을 느낍니다.
+            <br />
+            디자이너, 기획자, 백엔드 개발자와 함께 의견을 나누고 고민을 하며
+            프로젝트의 시작과 끝을 맺은 경험이 있습니다.
+            <br />
+            <br />
+            데이터의 Stale 여부에 따라 유저에게 올바르고 정확한 정보를
+            제공하고자 하며
+            <br />
+            컴포넌트의 불필요한 Re-rendering이 발생하지 않도록 최적화를 위해서
+            고민하고 노력합니다.
+            <br />
+          </TagContents>
+        </CodeLine>
+        <CodeLine>
+          <TagContents indent={4}>
+            <br />
+            제가 하는 일을 좋아하고, 스스로 부족한 부분을 잘 알기에 개발
+            공부하는 것이 즐겁습니다.
+            <br />
+            저는 공부한 것을 팀원들과 나누고 서로 배우는 것에 큰 가치가 있다고
+            여깁니다.
+            <br />
+            완벽하지 않아서 더 나은 서비스를 만드는 것을 함께 고민하고,
+            <br />
+            각자의 부족함을 서로 채우고, 재능을 인정하는 것이 좋은 기업과
+            서비스를 만드는 열쇠라고 생각하며 일합니다.
+          </TagContents>
+        </CodeLine>
+
+        <CodeLine>
+          <TagClose tagname={"heaeder"} indent={3} />
         </CodeLine>
 
         <CodeLine />
 
         <CodeLine>
-          <TagOpen tagname={'main'} attr={'class'} attrValue={'"기술과 경험, 그리고 공부중인 것들"'} indent={3} />
+          <TagOpen
+            tagname={"main"}
+            attr={"class"}
+            attrValue={'"기술과 경험, 그리고 공부중인 것들"'}
+            indent={3}
+          />
         </CodeLine>
 
         <CodeLine>
@@ -108,12 +148,37 @@ const About = () => {
         <CodeLine>
           <TagContents indent={6}>
             <dl>
-              <dt><em>HTML & CSS</em></dt>
-              <dd>- 크로스브라우징 & 시맨틱 마크업을 준수합니다.</dd>
-              <dd>- 반응형/적응형 개발 경험이 있습니다.</dd>
-              <dd>- 애니메이션 활용 가능합니다.</dd>
-              <dd>- 변수 사용 경험이 있습니다.</dd>
-              <dd>- 다양한 레이아웃을 문제없이 개발할 수 있습니다.</dd>
+              <dt>
+                <em>React, Next</em>
+              </dt>
+              <dd>
+                - 각종 Hooks 능숙하게 다룰 수 있으며, 모든 컴포넌트를 함수형으로
+                개발합니다.
+              </dd>
+              <dd>
+                - Atomic한 단위의 컴포넌트 개발을 좋아하며, 재사용성과 확장성을
+                고려합니다.
+              </dd>
+              <dd>
+                - 재사용성이 높은 공통 비즈니스 로직의 경우 Hook을 이용하여 공통
+                Hooks로 만들어 모듈화 합니다.
+              </dd>
+              <dd>
+                - 프로젝트의 규모를 고려하며 프로덕트의 폴더 아키텍쳐를
+                구상합니다.
+              </dd>
+              <dd>
+                - 컴포넌트의 불필요한 리렌더링 방지를 위하여 useRef, useMemo
+                등을 적절하게 사용합니다.
+              </dd>
+              <dd>
+                - Next의 Dynamic Route와 Pre-Rendering에 대한 이해가 있습니다.
+              </dd>
+              <dd>
+                - css module, styled-components, ant-design과 같은 다양한 디자인
+                라이브러리를 능숙하게 다룹니다.
+              </dd>
+              <dd>- i18next를 이용한 다국어 프로젝트 경험이 있습니다.</dd>
             </dl>
           </TagContents>
         </CodeLine>
@@ -121,10 +186,17 @@ const About = () => {
         <CodeLine>
           <TagContents indent={6}>
             <dl>
-              <dt><em>SCSS</em></dt>
-              <dd>- css를 컴포넌트화 하여 모듈 형태로 개발할 수 있습니다.</dd>
-              <dd>- Mixins를 확장성 있게 개발하여 재사용성을 높일 수 있습니다.</dd>
-              <dd>- 함수와 조건문을 사용할 수 있습니다.</dd>
+              <dt>
+                <em>Javascript, TypeScript</em>
+              </dt>
+              <dd>
+                - API로 받아온 데이터를 프론트 개발 상황에 맞게 적절히
+                가공하거나 다룰 수 있습니다.
+              </dd>
+              <dd>
+                - Props에 올바른 타입의 값이 들어올 수 있도록 typescript를
+                사용합니다.
+              </dd>
             </dl>
           </TagContents>
         </CodeLine>
@@ -132,33 +204,25 @@ const About = () => {
         <CodeLine>
           <TagContents indent={6}>
             <dl>
-              <dt><em>Javascript</em></dt>
-              <dd>- 기본적인 자바스크립트 문법에 대해 이해하고 있습니다.</dd>
-              <dd>- 함수를 만들어 사용하고 인자를 전달할 수 있습니다.</dd>
-              <dd>- 배열과 객체 문법에 대해서 이해하고 메서드를 사용한 경험이 있습니다.</dd>
-              <dd>- 로컬스토리지를 활용하여 토이프로젝트를 개발한 경험이 있습니다.</dd>
-              <dd>- ES6 문법에 대해 꾸준히 공부하고 있습니다.{'('}클래스, this, 화살표함수, 비구조화할당 등{')'}</dd>
+              <dt>
+                <em>Zustand, React-query</em>
+              </dt>
+              <dd>
+                - Zustand를 이용하여 store를 생성하고, 전역 상태관리를 합니다.
+              </dd>
+              <dd>
+                - API 데이터의 경우 React-query를 이용하여 stale 여부에 따라
+                refetching이 발생하도록 하여, 유저에게 보여지는 데이터가 언제나
+                최신의 상태로 제공되도록 합니다.
+              </dd>
+              <dd>
+                - React-query의 Mutation을 이용하여 서버로 데이터를 생성 및
+                업데이트, 삭제할 수 있습니다.
+              </dd>
             </dl>
           </TagContents>
         </CodeLine>
         <CodeLine />
-        <CodeLine>
-          <TagContents indent={6}>
-            <dl>
-              <dt><em>React</em></dt>
-              <dd>- 리액트 프로젝트 경험이 있습니다.</dd>
-              <dd>- 기본 문법에 대한 이해가 있습니다.</dd>
-              <dd>- React hooks 사용 경험이 있습니다.</dd>
-              <dd>- Router를 이용한 SPA 개발 경험이 있고 조건에 따라 컴포넌트 분기 처리를 할 수 있습니다.</dd>
-              <dd>- 함수형 컴포넌트를 만들어 props를 전달하고 받을 수 있습니다.</dd>
-              <dd>- 로컬스토리지에 저장한 데이터를 불러와 컴포넌트에 바인딩한 경험이 있습니다.</dd>
-              <dd>- React Bootstrap / Styled-components / SCSS / css-module을 모두 사용할 수 있습니다.</dd>
-              <dd>- Redux toolkit을 사용한 경험이 있습니다.</dd>
-              <dd>- axios를 이용하여 API 데이터를 받아와, 컴포넌트에 데이터를 바인딩한 경험이 있습니다.</dd>
-            </dl>
-          </TagContents>
-        </CodeLine>
-        <CodeLine/>
         <CodeLine />
         <CodeLine>
           <TagContents indent={5}>
@@ -170,8 +234,13 @@ const About = () => {
         <CodeLine>
           <TagContents indent={6}>
             <dl>
-              <dt><em>SVG</em></dt>
-              <dd>- canvas와 svg를 활용하여 웹드로잉 기술과 이미지 최적화에 대해 공부중입니다.</dd>
+              <dt>
+                <em>GSAP</em>
+              </dt>
+              <dd>
+                - GSAP의 animation, scroll trigger를 활용한 인터랙티브 웹 개발에
+                대해 공부중입니다.
+              </dd>
             </dl>
           </TagContents>
         </CodeLine>
@@ -180,63 +249,89 @@ const About = () => {
         <CodeLine>
           <TagContents indent={6}>
             <dl>
-              <dt><em>GSAP</em></dt>
-              <dd>- GSAP의 animation, scroll trigger를 활용한 인터랙티브 웹 개발에 대해 공부중입니다.</dd>
+              <dt>
+                <em>node.js / mongo DB</em>
+              </dt>
+              <dd>
+                - 백엔드와의 원활한 소통을 위해 node.js와 mongo DB를 공부하고
+                있습니다.
+              </dd>
             </dl>
           </TagContents>
         </CodeLine>
         <CodeLine />
 
         <CodeLine>
-          <TagContents indent={6}>
-            <dl>
-              <dt><em>Three.js</em></dt>
-              <dd>- webGL라이브러리인 Three.js를 활용하여 웹3D 기술을 공부중입니다.</dd>
-            </dl>
-          </TagContents>
+          <TagClose tagname={"main"} indent={3} />
         </CodeLine>
         <CodeLine />
 
         <CodeLine>
-          <TagContents indent={6}>
-            <dl>
-              <dt><em>JS</em></dt>
-              <dd>- 다양한 메서드에 대해서 공부하고 정리하고 있습니다.</dd>
-              <dd>- 클래스, 콜백, 프로미스, 클로저를 이해하기 위해 공부하고 있습니다.</dd>
-            </dl>
-          </TagContents>
-        </CodeLine>
-
-        <CodeLine>
-          <TagClose tagname={'main'} indent={3}/>
-        </CodeLine>
-        <CodeLine />
-
-        <CodeLine>
-          <TagOpen tagname={'footer'} attr={'class'} attrValue={'"경력 및 교육"'} indent={3} />
+          <TagOpen
+            tagname={"footer"}
+            attr={"class"}
+            attrValue={'"경력 및 교육"'}
+            indent={3}
+          />
         </CodeLine>
 
         <CodeLine>
           <TagContents indent={5}>
-            <h4>📇 경력 {'('}<a href="https://heeaepark.notion.site/f2f8c1a4fd104dda97c0fd4dba619d7a" target="_blank" rel="noopener noreferrer">노션 보러가기</a>{')'}</h4>
+            <h4>
+              📇 경력 {"("}
+              <a
+                href="https://heeaepark.notion.site/f2f8c1a4fd104dda97c0fd4dba619d7a"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                노션 보러가기
+              </a>
+              {")"}
+            </h4>
           </TagContents>
         </CodeLine>
         <CodeLine />
         <CodeLine>
           <TagContents indent={6}>
-          <dl>
-            <dt><em>{'('}주{')'}메이커빌{'('}2020.06 ~ 2022.06{')'}</em></dt>
-            <dd>- 쇼핑몰 개발 및 백오피스 개발, 유지보수 업무 담당 (정직원/사원)</dd>
-          </dl>
+            <dl>
+              <dt>
+                <em>
+                  {"("}주{")"}퍼블리시{"("}2023.01 ~ 2023.09{")"}
+                </em>
+              </dt>
+              <dd>
+                - 뉴스토마스 웹뷰 애플리케이션과 CMS 개발 및 퍼블리시 NEWS 코인
+                Widget 및 Explorer 개발 (정직원/매니저)
+              </dd>
+            </dl>
           </TagContents>
         </CodeLine>
         <CodeLine />
         <CodeLine>
           <TagContents indent={6}>
-          <dl>
-            <dt><em>{'('}주{')'}누리미디어{'('}2019.03 ~ 2019.05{')'}</em></dt>
-            <dd>- 학회 홈페이지 유지보수 및 관리 (아르바이트)</dd>
-          </dl>
+            <dl>
+              <dt>
+                <em>
+                  {"("}주{")"}메이커빌{"("}2020.06 ~ 2022.06{")"}
+                </em>
+              </dt>
+              <dd>
+                - 쇼핑몰 개발 및 백오피스 개발, 유지보수 업무 담당 (정직원/사원)
+              </dd>
+            </dl>
+          </TagContents>
+        </CodeLine>
+        <CodeLine />
+        <CodeLine>
+          <TagContents indent={6}>
+            <dl>
+              <dt>
+                <em>
+                  {"("}주{")"}누리미디어{"("}2019.03 ~ 2019.05{")"}
+                </em>
+              </dt>
+              <dd>- 학회 홈페이지 유지보수 및 관리 (아르바이트)</dd>
+            </dl>
           </TagContents>
         </CodeLine>
 
@@ -250,29 +345,33 @@ const About = () => {
         <CodeLine />
         <CodeLine>
           <TagContents indent={6}>
-          <dl>
-            <dt>- 한국방송통신대학교 컴퓨터과학과 3학년{'('}2022.03 입학 ~ 휴학중{')'}</dt>
-            <dt>- 이젠아카데미 모바일 웹디자인 & 프론트엔드{'('}UIUX디자인{')'} 웹퍼블리셔 과정 수료{'('}2019.08 ~ 2020.01{')'}</dt>
-          </dl>
+            <dl>
+              <dt>
+                - 한국방송통신대학교 컴퓨터과학과 3학년{"("}2022.03 입학 ~
+                휴학중{")"}
+              </dt>
+              <dt>
+                - 이젠아카데미 모바일 웹디자인 & 프론트엔드{"("}UIUX디자인{")"}{" "}
+                웹퍼블리셔 과정 수료{"("}2019.08 ~ 2020.01{")"}
+              </dt>
+            </dl>
           </TagContents>
         </CodeLine>
 
         <CodeLine>
-          <TagClose tagname={'footer'} indent={3}/>
-        </CodeLine>
-        
-
-        <CodeLine>
-          <TagClose tagname={'body'} indent={2}/>
+          <TagClose tagname={"footer"} indent={3} />
         </CodeLine>
 
         <CodeLine>
-          <TagClose tagname={'html'} />
+          <TagClose tagname={"body"} indent={2} />
         </CodeLine>
 
+        <CodeLine>
+          <TagClose tagname={"html"} />
+        </CodeLine>
       </CodeBlock>
     </>
-  )
-}
+  );
+};
 
 export default About;

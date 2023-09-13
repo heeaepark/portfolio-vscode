@@ -1,8 +1,8 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
-import VscodeIcon from './../components/icons/VscodeIcon';
+import VscodeIcon from "./../components/icons/VscodeIcon";
 
-import style from './../styles/Home.module.css';
+import style from "./../styles/Home.module.css";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -13,20 +13,28 @@ const Home = () => {
         <div className={style.typewriter}>
           <h1>Hello 'Hee-ae' World!</h1>
         </div>
-        <p className={style.heading}>
-          I'm Markup & Interactive web Developer
-        </p>
+        <p className={style.heading}>I'm Frontend Developer</p>
         <div className={style.buttons}>
-          <button onClick={() => {
-            navigate('/projects');
-          }} className={`${style.button} ${style.button_work}`}>View Works</button>
-          <button onClick={() => {
-            navigate('/contact');
-          }} className={`${style.button} ${style.button_contact}`}>Contact me</button>
+          <button
+            onClick={() => {
+              navigate("/projects");
+            }}
+            className={`${style.button} ${style.button_work}`}
+          >
+            View Works
+          </button>
+          <button
+            onClick={() => {
+              navigate("/contact");
+            }}
+            className={`${style.button} ${style.button_contact}`}
+          >
+            Contact me
+          </button>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Home;
